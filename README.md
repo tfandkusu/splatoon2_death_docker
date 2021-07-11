@@ -1,0 +1,2 @@
+# splatoon2_death_docker
+スプラトゥーン2のプレイ動画から、やられる直前30秒の動画を作成するDockerイメージ
