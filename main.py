@@ -17,6 +17,8 @@ if len(sys.argv) <= 1:
 src_movie = sys.argv[1]
 # 切り出し秒数
 cut_duration = 15
+# 出力ファイル名ベース
+basename = os.path.splitext(os.path.basename(src_movie))[0]
 # %%
 # TensorFlow lite の初期化
 interpreter = tf.lite.Interpreter(model_path='model/model.tflite')
@@ -86,8 +88,6 @@ with open('cut_time.csv') as f:
 # ffmpegで切り出す
 for i in tqdm(range(len(sss))):
     ss = sss[i]
-    command = "ffmpeg -y -ss %s -i %s -t %d -c:v libx264 -acodec aac -strict experimental -r 30 -b:v 3000k -b:a 320k extract/scene_%03d.mp4" % (
-        ss, src_movie, cut_duration, i)
+    command = "ffmpeg -y -ss %s -i %s -t %d -c:v libx264 -acodec aac -strict experimental -r 30 -b:v 3000k -b:a 320k extract/%s_%03d.mp4" % (
+        ss, src_movie, cut_duration, basename, i)
     subprocess.run(command, shell=True)
-
-# %%
