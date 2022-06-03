@@ -130,6 +130,5 @@ dmypy.json
 
 src/
 extract/
-.vscode/
 cut_time.csv
 .DS_Store

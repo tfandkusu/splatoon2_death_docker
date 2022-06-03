@@ -13,4 +13,4 @@ COPY poetry.toml /app/
 COPY pyproject.toml /app/
 COPY main.py /app/
 COPY model /app/model
-RUN poetry install
+RUN poetry install --no-dev
