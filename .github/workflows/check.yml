@@ -1,5 +1,4 @@
 name: check
-# ワークフロー実行タイミングは
 on:
   push:
     branches:
