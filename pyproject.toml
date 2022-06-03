@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "splatoon2_death_docker"
 version = "0.1.0"
-description = "スプラトゥーン2のプレイ動画から、やられる直前30秒の動画を作成する"
+description = "スプラトゥーン2のプレイ動画から、やられる直前15秒の動画を作成する"
 authors = ["Haruhiko Takada"]
 license = "Apache License 2.0"
 
