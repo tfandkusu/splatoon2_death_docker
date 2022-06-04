@@ -9,6 +9,7 @@ git clone git@github.com:tfandkusu/splatoon2_death_docker.git
 cd splatoon2_death_docker
 ```
 
+Appleシリコンをお使いの場合は[aarch64ブランチ](https://github.com/tfandkusu/splatoon2_death_docker/pull/8)をチェックアウトします。
 
 ```sh
 docker compose build
