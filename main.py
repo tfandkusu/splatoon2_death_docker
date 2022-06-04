@@ -12,7 +12,7 @@ from tqdm import tqdm
 # %%
 if len(sys.argv) <= 1:
     print("Usege:")
-    print("docker-compose run main python3 main.py <mp4_file_path>")
+    print("python main.py <mp4_file_path>")
     exit(0)
 # 切り出し元動画パス
 src_movie = sys.argv[1]
