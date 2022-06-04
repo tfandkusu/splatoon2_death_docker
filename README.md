@@ -9,6 +9,7 @@ git clone git@github.com:tfandkusu/splatoon2_death_docker.git
 cd splatoon2_death_docker
 ```
 
+Appleシリコンをお使いの場合は[aarch64ブランチ](https://github.com/tfandkusu/splatoon2_death_docker/pull/8)をチェックアウトします。
 
 ```sh
 docker compose build
@@ -25,8 +26,3 @@ docker compose run --rm main poetry run python main.py src/<動画ファイル�
 ```
 
 extractディレクトリにやられる直前15秒の動画一覧が出力されます。
-
-
-# Appleシリコン向け
-
-現在、対応中です。
